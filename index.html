@@ -199,11 +199,11 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/p5.png" alt="..." />
+                            <img class="img-fluid" src="assets/img prac6/p.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Práctica 6: Brazo Robótico </div>
-                            <div class="portfolio-caption-subheading text-muted">Breve resumen: En esta práctica mostraremos detalladamente como  crear un brazo robotico utilizando 4 servomotores y 4 potenciométros.</div>
+                            <div class="portfolio-caption-subheading text-muted">Breve resumen: En esta práctica mostraremos como se puede crear un brazo robótico con 4 servomotores y 4 potenciómetros, utilizando como material madera MDF 3mm.</div>
                         </div>
                     </div>
                 </div>
@@ -2706,37 +2706,35 @@ actuadores en proyectos de electrónica.
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Servimotores</h2>
+                                    <h2 class="text-uppercase">Brazo Robótico</h2>
                                     <p class="item-intro text-muted">Alum. Elia del Carmen Valdés Ávila | Mario Alberto Calvillo Ceron.</p>
-                                    <p class="item-intro text-muted">20 de Septiembre del 2024</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/p4.jpg" alt="..." />
-                                    <h3>Servo 1</h3>
+                                    <p class="item-intro text-muted">20 de Octubre del 2024</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img prac6/p.jpg" alt="..." />
+                                    
                                     <h4>Introducción</h4>
                                     <ul> 
                                     <p>
-                                        Los servos son componentes esenciales en proyectos de robótica y automatización,
-ya que permiten un control preciso del movimiento. Este artículo presenta un proyecto sencillo
-en el que se controla un servo motor utilizando un Arduino UNO R3. El código permite mover el
-servo a una posición específica, demostrando el uso de la biblioteca Servo en Arduino.
+                                        El brazo robótico es un sistema automatizado que imita el movimiento y la funcionalidad de un brazo humano. Este proyecto se centra en la construcción de un brazo robótico utilizando servomotores y un microcontrolador Arduino, con el fin de demostrar principios básicos de robótica, control y automatizació
                                     </p>
                                     </ul>
 
                                     <h4>Resumen</h4>
                                     <ul>
                                     <p>
-                                        En este proyecto, se utiliza un servo motor conectado al pin 9 del Arduino UNO R3.
-El código permite mover el servo a una posición de 90 grados. La implementación ilustra
-conceptos básicos de control de servos, como la inicialización y el envío de comandos de
-posición.
+                                        Se desarrolló un brazo robótico utilizando materiales accesibles y componentes electrónicos comunes. 
+                                        El brazo está controlado por un Arduino Uno, que recibe señales de potenciómetros para ajustar la posición de los servomotores. Este sistema permite un control preciso y flexible del brazo robótico, lo que abre la puerta a aplicaciones en áreas como la automatización y la educación en tecnología.
                                     </p> </ul>
 
                                     <h4>Materiales</h4>
                                     <ul> 
-                                    <li>Arduino Uno R3</li>
-                                    <li>Un servomotor</li>
+                                    <li>MDF (Madera de densidad media) para la base y el brazo.</li>
+                                    <li>Tornillos M2, M3 y M6 con sus respectivas tuercas.</li>
+                                    <li>Arduino Uno R3.</li>
+                                    <li>2 micro servos.</li>
+                                    <li>2 servomotores.</li>
+                                    <li>4 potenciómetros</li>
                                     <li>Jumpers</li>
                                     <li>Protoboard</li>
-                                    <li>Fuente de alimentación externa</li>
                                     
                                     </ul>
                                     
@@ -2745,10 +2743,14 @@ posición.
                                     
                                     <ol>
                                         <p> 
-                                            <li>Conectar el cable de señal (generalmente de color amarillo o blanco) del servo al
-                                                pin 9 del Arduino.</li>
-                                            <li>Conectar el cable de alimentación (rojo) del servo a VCC (5V).</li>
-                                            <li>Conectar el cable de tierra (negro o marrón) del servo a GND.</li>
+                                            <li>Se cortaron piezas de MDF para la base y el brazo, asegurando que fueran lo suficientemente robustas para soportar el peso de los servos.</li>
+                                            <li>Los servos se montaron en posiciones estratégicas para permitir un movimiento ágil y funcional del brazo.</li>
+                                            <li>Se utilizó tornillería M2 y M3 para asegurar los servos y las piezas del brazo a la base de MDF.</li>
+                                            <li>Los potenciómetros se instalaron en la parte superior de la base, permitiendo el ajuste manual de las posiciones de los servos.</li>
+                                            <li>Los servos se conectaron a los pines digitales del Arduino Uno.</li>
+                                            <li>Se utilizaron jumpers para conectar los potenciómetros a las entradas analógicas del Arduino.</li>
+                                            <li>La configuración del Protoboard permitió un manejo ordenado de las conexiones.</li>
+                                            <li>Se implementó un código en Arduino que permite leer los valores de los potenciómetros y mapearlos a las posiciones de los servos. El código está diseñado para controlar cuatro servos, permitiendo una amplia gama de movimientos.</li>
                                             
                                         </p>
                                     </ol>
@@ -2756,36 +2758,39 @@ posición.
                                     <h4>Simulación</h4>
                                     <ul>
                                         <p>
-                                            n El proyecto puede ser simulado en plataformas como Tinkercad, donde puedes
-recrear el circuito y cargar el código, permitiendo observar el movimiento del servo sin
-necesidad de hardware físico.
+                                            La simulación del brazo robótico se realizó utilizando el código programado en el entorno de desarrollo Arduino. Se monitorizaron los movimientos en tiempo real ajustando los potenciómetros, lo que permitió verificar la efectividad de la conexión y el control de los servos. 
+                                            Los movimientos del brazo fueron precisos y fluidos, demostrando que el sistema funcionaba correctamente.
                                         </p>
                                         
-                                        <img class="img-fluid d-block mx-auto" src="assets/Img prac5/simulacion/1.png" alt="Imagen centrada">
+                                        <img class="img-fluid d-block mx-auto" src="assets/img prac6/brazo.jpg" alt="Imagen centrada">
                                     </ul>
 
                                     <h4>Resultado</h4>
                                     <ul>
                                         <p>
-                                            Al ejecutar el código, el servo motor se moverá a la posición de 90 grados. Este
-comportamiento confirma que el circuito y el código han sido implementados correctamente.
+                                            El proyecto concluyó con éxito, logrando construir un brazo robótico funcional que responde a los ajustes manuales de los potenciómetros. Se observó que cada servo se movía de acuerdo con las posiciones asignadas, permitiendo realizar diferentes tareas simples como levantar y mover objetos ligeros.
                                             </p>
                                             <video width="300px" height="360px" controls>
-                                                <source src="assets/Videos/p4.mp4" type="video/mp4">
+                                                <source src="assets/img prac6/video de brazo.mp4" type="video/mp4">
                                             </video>
-                                            <video width="300px" height="360px" controls>
-                                                <source src="assets/Videos/p04.mp4" type="video/mp4">
-                                            </video>
+                                            
                                     </ul>
                                     <h4>Conclusión</h4>
                                     <ul>
                                         <p>
-                                            Este proyecto muestra cómo controlar un servo motor utilizando un Arduino UNO
-                                            R3. A través de este ejercicio, los usuarios pueden aprender los fundamentos del control de
-                                            movimiento, lo que es fundamental para desarrollos más avanzados en robótica y
-                                            automatización.
+                                            El brazo robótico construido representa una excelente introducción a los conceptos de robótica y control de sistemas. Este proyecto no solo permite entender la mecánica del movimiento, sino también el funcionamiento de la programación y la electrónica básica. La implementación de componentes como el Arduino y los servos demuestra su versatilidad en aplicaciones prácticas, ofreciendo una base sólida para futuros desarrollos en el campo de la robótica.
                                            </p>
                                     </ul>
+
+                                    <h3>Code</h3>
+                                            
+                                            </li>
+                                            <li>
+                                                <strong>Brazo Robótico:</strong>
+                                                <a href="assets/img prac6/Codigo_Brazo.ino" width="600px" height="500px">
+                                                    Descargar
+                                                </a>
+                                            </li>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
